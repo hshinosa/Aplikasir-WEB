@@ -172,6 +172,14 @@ body {
     padding: 0 2rem;
 }
 
+.penjelasan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 6rem;
+    padding-left: 6rem;
+}   
+
 /* Mockup Carousel */
 .mockup-carousel {
     padding: 4rem 0;
