@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasir - Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/maindashboard/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-logo">
+                <img src="../../img/maindashboard/logo.png" alt="Aplikasir Logo">
+            </div>
+            
+            <div class="user-profile">
+                <span class="user-name">Sinta Haidar Alamaa</span>
+                <img src="../../img/maindashboard/prof_pic.png" alt="Profile">
+            </div>
+        </div>
+        <div class="topbar-outline"></div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="#" class="nav-item active">
+                <img src="../../img/maindashboard/home.png" alt="Home">
+                Beranda
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../../img/maindashboard/users-more.png" alt="Users">
+                Pengguna
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../../img/maindashboard/logout.png" alt="Logout">
+                Keluar
+            </a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Head -->
+            <div>
+                <h1 class="page-title">Beranda</h1>
+                <div class="page-date">Senin 21 Oktober 2024</div>
+            </div>
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="content-box-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="../../img/maindashboard/user.png" alt="Icon 1">
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Pengguna Harian</div>
+                            <div class="stat-number">124</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="../../img/maindashboard/user.png" alt="Icon 2">
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Pengguna Baru</div>
+                            <div class="stat-number">124</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="../../img/maindashboard/user.png" alt="Icon 3">
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Scan Harian</div>
+                            <div class="stat-number">124</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="../../img/maindashboard/user.png" alt="Icon 4">
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Pengguna</div>
+                            <div class="stat-number">124</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Transaction Table -->
+            <div class="content-box-transaction">
+                <div class="table-section">
+                    <h2 class="table-title">Riwayat Kegiatan</h2>
+                    <table id="transactionTable">
+                        <thead>
+                            <tr>
+                                <th>NO</th>
+                                <th>Pengguna</th>
+                                <th>Aktivitas</th>
+                                <th>Keterangan</th>
+                                <th>Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                    <div class="pagination" id="pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/maindashboard/script.js"></script>
+</body>
+</html>
