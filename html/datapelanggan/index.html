@@ -3,61 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Produk</title>
-    <link rel="stylesheet" href="../../css/dataproduk/style.css">
+    <title>Data Pelanggan</title>
+    <link rel="stylesheet" href="../../css/datapelanggan/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="logo">
-            <img src="../../img/dataproduk/logo.jpg">
-        </div>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fas fa-home"></i>
-                    <span>Beranda</span>
-                </a>
-            </li>
-            <li class="active">
-                <a href="#">
-                    <i class="fas fa-users"></i>
-                    <span>Pengguna</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Keluar</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="main-content">
-        <div class="top-bar">
-            <div class="user-info">
-                <span>Sinta Haidar Alamaa</span>
-                <img src="../../img/dataproduk/logo.jpg">
+    <div class="container">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-logo">
+                <img src="../../img/datapelanggan/logo.png" alt="Aplikasir Logo">
             </div>
+            
+            <div class="user-profile">
+                <span class="user-name">Sinta Haidar Alamaa</span>
+                <img src="../../img/datapelanggan/image.png" alt="Profile">
+            </div>
+        </div>
+        <div class="topbar-outline"></div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="#" class="nav-item active">
+                <img src="../../img/datapelanggan/home.png" alt="Home">
+                Beranda
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../../img/datapelanggan/more.png" alt="Users">
+                Pengguna
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../../img/datapelanggan/logout.png" alt="Logout">
+                Keluar
+            </a>
         </div>
 
         <div class="content">
-            <h2 style="color: #286DE1;">Data Produk</h2>
+            <h2>Data Pelanggan</h2>
             
                 <table class="user-table">
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>Gambar</th>
-                            <th>Nama Produk</th>
-                            <th>Harga</th>
-                            <th>Stok</th>
+                            <th>Pelanggan</th>
+                            <th>No. Telp</th>
+                            <th>Email</th>
+                            <th>Kredit</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody id="userData">
+                        <!-- Data will be populated by JavaScript -->
                     </tbody>
                 </table>
                 
@@ -71,6 +68,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../js/datapelanggan/script.js"></script>
 </body>
