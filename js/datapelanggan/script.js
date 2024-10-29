@@ -3,20 +3,20 @@ $(document).ready(function() {
     const users = [
         {
             no: 1,
-            pelanggan: "aplikasir pengguna",
-            username: "sinta",
+            pelanggan: "fuad amba maximof",
             telp: "087336523465",
-            email: "sintaf123@gmail.com"
+            email: "fuadambamaximof123.com",
+            kredit: "Rp 30.000,00"
         }
     ];
 
     // Create 11 rows of data
     const userData = Array.from({ length: 11 }, (_, i) => ({
         no: i + 1,
-        pelanggan: "aplikasir pengguna",
-        username: "sinta",
+        pelanggan: "fuad amba maximof",
         telp: "087336523465",
-        email: "sintaf123@gmail.com"
+        email: "fuadambamaximo123.com",
+        kredit: "Rp 30.000,00"
     }));
 
     // Populate table
@@ -29,9 +29,9 @@ $(document).ready(function() {
                 <tr>
                     <td>${user.no}</td>
                     <td>${user.pelanggan}</td>
-                    <td>${user.username}</td>
                     <td>${user.telp}</td>
                     <td>${user.email}</td>
+                    <td>${user.kredit}</td>
                     <td class="action-icons">
                         <i class="fas fa-edit"></i>
                         <i class="fas fa-trash"></i>
