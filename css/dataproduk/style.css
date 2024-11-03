@@ -10,102 +10,6 @@ body {
     background-color: white;
 }
 
-/* Sidebar Styles */
-.sidebar {
-    width: 250px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    background-color: white;
-    border-right: 1px solid #286DE1;
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-}
-
-.logo {
-    padding: 1.5rem 0;
-    text-align: center;
-    height: 100px;
-}
-
-.sidebar ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 2rem;
-}
-
-.sidebar ul li a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.75rem 0;
-    color: #64748B;
-    text-decoration: none;
-    gap: 0.5rem;
-}
-
-.sidebar ul li a i {
-    font-size: 1.25rem;
-}
-
-.sidebar ul li a span {
-    font-size: 0.75rem;
-}
-
-.sidebar ul li.active a {
-    color: #286DE1;
-}
-
-/* Main Content Area */
-.main-content {
-    margin-left: 80px;
-    min-height: 100vh;
-}
-
-/* Top Bar */
-.top-bar {
-    height: 100px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0 2rem;
-    border-bottom: 1px solid #286DE1;
-}
-
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.user-info span {
-    color: #1E293B;
-    font-size: 0.875rem;
-}
-
-.profile-pic {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Content Area */
-.content {
-    padding: 2rem;
-}
-
-/* Main Content Area */
-.main-content {
-    margin-left: 250px;
-    min-height: 100vh;
-}
-
 h2 {
     color: black;
     font-size: 1.25rem;
@@ -120,12 +24,12 @@ h2 {
 }
 
 .user-table th {
-    padding: 1rem;
+    padding: 10px;
     text-align: center;
     background-color: white;
-    color: #64748B;
-    font-weight: 500;
-    font-size: 0.875rem;
+    color: #A0AEC0;
+    font-weight: 200;
+    font-size: 0.850rem;
     border-bottom: 1px solid #E2E8F0;
     border-top: 1px solid #E2E8F0;;
 }
@@ -139,9 +43,10 @@ h2 {
 }
 
 .user-table td {
-    padding: 1rem;
+    padding: 18px;
     color: black;
-    font-size: 0.875rem;
+    font-size: 0.900rem;
+    font-weight: 500;
 }
 
 .user-table td:first-child {
@@ -150,20 +55,22 @@ h2 {
 
 .action-icons {
     display: flex;
-    gap: 1rem;
+    gap: 10px;
     justify-content: center;
 }
 
 .action-icons i {
     cursor: pointer;
-    font-size: 0.875rem;
+    font-size: 0.900rem;
 }
 
 .action-icons i.fa-edit {
+    font-size: 1.25rem;
     color: #286DE1;
 }
 
 .action-icons i.fa-trash {
+    font-size: 1.25rem;
     color: #EF4444;
 }
 

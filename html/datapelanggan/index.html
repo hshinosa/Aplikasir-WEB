@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Pelanggan</title>
-    <link rel="stylesheet" href="../../css/datapelanggan/style.css">
+    <link rel="stylesheet" href="../../css/datapelanggan/style.css"> <!-- Link to datapelanggan.css -->
+    <link rel="stylesheet" href="../../css/navbar/style.css"> <!-- Navbar CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -13,63 +14,70 @@
         <!-- Topbar -->
         <div class="topbar">
             <div class="topbar-logo">
-                <img src="../../img/datapelanggan/logo.png" alt="Aplikasir Logo">
+                <a href="#" onclick="navigateToDashboard()">
+                    <img src="../../img/navbar/logo.png" alt="Aplikasir Logo">
+                </a>
             </div>
-            
             <div class="user-profile">
                 <span class="user-name">Sinta Haidar Alamaa</span>
-                <img src="../../img/datapelanggan/image.png" alt="Profile">
+                <img src="../../img/navbar/prof_pic.png" alt="Profile">
             </div>
         </div>
-        <div class="topbar-outline"></div>
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <a href="#" class="nav-item active">
-                <img src="../../img/datapelanggan/home.png" alt="Home">
+            <a href="#" class="nav-item" onclick="navigateToDashboard()">
+                <img src="../../img/navbar/home.png" alt="Home">
                 Beranda
             </a>
-            <a href="#" class="nav-item">
-                <img src="../../img/datapelanggan/more.png" alt="Users">
+            <a href="#" class="nav-item active" onclick="navigateToDataPengguna2()">
+                <img src="../../img/navbar/users-more.png" alt="Users">
                 Pengguna
             </a>
             <a href="#" class="nav-item">
-                <img src="../../img/datapelanggan/logout.png" alt="Logout">
+                <img src="../../img/navbar/logout.png" alt="Logout">
                 Keluar
             </a>
         </div>
 
-        <div class="content">
-            <h2>Data Pelanggan</h2>
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div>
+                <h1 class="page-title">Data Pelanggan</h1>
+                <div class="page-date">Senin 21 Oktober 2024</div>
+            </div>
             
-                <table class="user-table">
-                    <thead>
-                        <tr>
-                            <th>NO</th>
-                            <th>Pelanggan</th>
-                            <th>No. Telp</th>
-                            <th>Email</th>
-                            <th>Kredit</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody id="userData">
-                        <!-- Data will be populated by JavaScript -->
-                    </tbody>
-                </table>
-                
-                <div class="pagination">
-                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">....</button>
-                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
-                </div>
+            <!-- Table -->
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Nama</th>
+                        <th>No. Telp</th>
+                        <th>Email</th>
+                        <th>Kredit</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="userData">
+                    <!-- Data will be populated by JavaScript -->
+                </tbody>
+            </table>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">....</button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../js/datapelanggan/script.js"></script>
+    <script src="../../js/navigasi/script.js"></script>
+
 </body>
 </html>

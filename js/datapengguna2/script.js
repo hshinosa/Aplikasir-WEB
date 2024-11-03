@@ -33,8 +33,8 @@ $(document).ready(function() {
                     <td>${user.telp}</td>
                     <td>${user.email}</td>
                     <td class="action-icons">
-                        <i class="fas fa-edit"></i>
-                        <i class="fas fa-trash"></i>
+                        <a href="#" class="edit-link" onclick="navigateToDataPengguna1()"><i class="fas fa-edit"></i></a>
+                        <a href="#" class="delete-link"><i class="fas fa-trash"></i></a>
                     </td>
                 </tr>
             `);

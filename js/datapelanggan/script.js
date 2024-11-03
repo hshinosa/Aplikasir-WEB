@@ -3,9 +3,9 @@ $(document).ready(function() {
     const users = [
         {
             no: 1,
-            pelanggan: "fuad amba maximof",
+            pelanggan: "Simalakama",
             telp: "087336523465",
-            email: "fuadambamaximof123.com",
+            email: "simalakama@email.com",
             kredit: "Rp 30.000,00"
         }
     ];
@@ -13,7 +13,7 @@ $(document).ready(function() {
     // Create 11 rows of data
     const userData = Array.from({ length: 11 }, (_, i) => ({
         no: i + 1,
-        pelanggan: "fuad amba maximof",
+        nama: "fuad amba maximof",
         telp: "087336523465",
         email: "fuadambamaximo123.com",
         kredit: "Rp 30.000,00"
@@ -28,7 +28,7 @@ $(document).ready(function() {
             tbody.append(`
                 <tr>
                     <td>${user.no}</td>
-                    <td>${user.pelanggan}</td>
+                    <td>${user.nama}</td>
                     <td>${user.telp}</td>
                     <td>${user.email}</td>
                     <td>${user.kredit}</td>

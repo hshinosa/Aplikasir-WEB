@@ -6,34 +6,37 @@
     <title>Aplikasir - Admin Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/maindashboard/style.css">
+    <link rel="stylesheet" href="../../css/navbar/style.css">
 </head>
 <body>
     <div class="container">
         <!-- Topbar -->
         <div class="topbar">
             <div class="topbar-logo">
-                <img src="../../img/maindashboard/logo.png" alt="Aplikasir Logo">
+                <a href="#" onclick="navigateToDashboard()">
+                    <img src="../../img/navbar/logo.png" alt="Aplikasir Logo">
+                </a>
             </div>
             
             <div class="user-profile">
                 <span class="user-name">Sinta Haidar Alamaa</span>
-                <img src="../../img/maindashboard/prof_pic.png" alt="Profile">
+                <img src="../../img/navbar/prof_pic.png" alt="Profile">
             </div>
         </div>
         <div class="topbar-outline"></div>
 
         <!-- Sidebar -->
         <div class="sidebar">
-            <a href="#" class="nav-item active">
-                <img src="../../img/maindashboard/home.png" alt="Home">
+            <a href="#" class="nav-item active" onclick="navigateToDashboard()">
+                <img src="../../img/navbar/home.png" alt="Home">
                 Beranda
             </a>
-            <a href="#" class="nav-item">
-                <img src="../../img/maindashboard/users-more.png" alt="Users">
+            <a href="#" class="nav-item" onclick="navigateToDataPengguna2()">
+                <img src="../../img/navbar/users-more.png" alt="Users">
                 Pengguna
             </a>
             <a href="#" class="nav-item">
-                <img src="../../img/maindashboard/logout.png" alt="Logout">
+                <img src="../../img/navbar/logout.png" alt="Logout">
                 Keluar
             </a>
         </div>
@@ -115,7 +118,8 @@
             </div>
         </div>
     </div>
-
     <script src="../../js/maindashboard/script.js"></script>
+    <script src="../../js/navigasi/script.js"></script>
+
 </body>
 </html>
