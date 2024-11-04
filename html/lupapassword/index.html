@@ -6,6 +6,7 @@
     <title>ApliKasir</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/login/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,19 +18,20 @@
                 <h1>Lupa Kata Sandi</h1>
                 <p>Masukkan Kata Sandi Baru Anda untuk Melanjutkan</p>
             </div>
-            <form action="../../html/login/index.html" method="GET">
+            <form id="resetPasswordForm">
                 <div class="form-group">
-                    <label for="username">Kata Sandi</label>
-                    <input type="text" id="username" name="username" placeholder="Kata Sandi">
+                    <label for="newPassword">Kata Sandi</label>
+                    <input type="password" id="newPassword" name="newPassword" placeholder="Kata Sandi">
                 </div>
                 <div class="form-group">
-                    <label for="password">Verifikasi Kata Sandi</label>
-                    <input type="password" id="password" name="password" placeholder="Verifikasi Kata Sandi">
+                    <label for="confirmPassword">Verifikasi Kata Sandi</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Verifikasi Kata Sandi">
                 </div>
-                <button type="submit" class="login-button">Simpan</button>
-                </a>
+                <button type="button" id="saveButton" class="login-button">Simpan</button>
             </form>
         </div>
     </div>
+
+    <script src="../../js/lupapassword/script.js"></script>
 </body>
 </html>
