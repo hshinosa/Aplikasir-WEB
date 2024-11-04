@@ -17,7 +17,6 @@
                     <img src="../../img/navbar/logo.png" alt="Aplikasir Logo">
                 </a>
             </div>
-            
             <div class="user-profile">
                 <span class="user-name">Sinta Haidar Alamaa</span>
                 <img src="../../img/navbar/prof_pic.png" alt="Profile">
@@ -28,26 +27,23 @@
         <!-- Sidebar -->
         <div class="sidebar">
             <a href="#" class="nav-item active" onclick="navigateToDashboard()">
-                <img src="../../img/navbar/home.png" alt="Home">
-                Beranda
+                <img src="../../img/navbar/home.png" alt="Home"> Beranda
             </a>
             <a href="#" class="nav-item" onclick="navigateToDataPengguna2()">
-                <img src="../../img/navbar/users-more.png" alt="Users">
-                Pengguna
+                <img src="../../img/navbar/users-more.png" alt="Users"> Pengguna
             </a>
             <a href="#" class="nav-item">
-                <img src="../../img/navbar/logout.png" alt="Logout">
-                Keluar
+                <img src="../../img/navbar/logout.png" alt="Logout"> Keluar
             </a>
         </div>
 
         <!-- Main Content -->
         <div class="main-content">
-            <!-- Head -->
             <div>
                 <h1 class="page-title">Beranda</h1>
                 <div class="page-date">Senin 21 Oktober 2024</div>
             </div>
+            
             <!-- Stats Cards -->
             <div class="stats-container">
                 <div class="content-box-stats">
@@ -96,12 +92,11 @@
                 </div>
             </div>
 
-
-            <!-- Transaction Table -->
-            <div class="content-box-transaction">
+            <!-- Table -->
+            <div class="content-box-log">
                 <div class="table-section">
                     <h2 class="table-title">Riwayat Kegiatan</h2>
-                    <table id="transactionTable">
+                    <table id="logTable">
                         <thead>
                             <tr>
                                 <th>NO</th>
@@ -118,8 +113,8 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../../js/maindashboard/script.js"></script>
     <script src="../../js/navigasi/script.js"></script>
-
 </body>
 </html>
