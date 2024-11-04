@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/datapengguna1/style.css">
+    <link rel="stylesheet" href="../../css/navbar/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>ApliKasir</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Topbar -->
+        <div class="topbar">
+            <div class="topbar-logo">
+                <a href="#" onclick="navigateToDashboard()">
+                    <img src="../../img/navbar/logo.png" alt="Aplikasir Logo">
+                </a>
+            </div>
+
+            <div class="user-profile">
+                <span class="user-name">Sinta Haidar Alamaa</span>
+                <img src="../../img/navbar/prof_pic.png" alt="Profile">
+            </div>
+        </div>
+        <div class="topbar-outline"></div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="#" class="nav-item " onclick="navigateToDashboard()">
+                <img src="../../img/navbar/home.png" alt="">
+                Beranda
+            </a>
+            <a href="#" class="nav-item active" onclick="navigateToDataPengguna2()" >
+                <img src="../../img/navbar/users-more-active.png" alt="">
+                Pengguna
+            </a>
+            <a href="#" class="nav-item">
+                <img src="../../img/navbar/logout.png" alt="">
+                Keluar
+            </a>
+        </div>
+
+        <!-- Content -->
+        <main class="main-content">
+            <div class="back-button">
+                <a href="#" onclick="navigateToDataPengguna2()">
+                    <img src="../../img/datapengguna1/back-arrow.png" alt="">
+                    <span>Pengguna</span>
+                </a>
+            </div>
+            <div class="content">
+                <div class="user-info">
+                    <h2>Info Akun</h2>
+                    <form id="userInfoForm">
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" placeholder="Fuadimas" data-default="Fuadimas">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="••••••••••••" data-default="••••••••••••">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="fuadalmaamdf123..." data-default="fuadalmaamdf123...">
+                        </div>
+                        <div class="form-group">
+                            <label>Nomor Telepon</label>
+                            <input type="tel" placeholder="+62 895-1244-4844" data-default="+62 895-1244-4844">
+                        </div>
+                        <div class="form-group">
+                            <label>Nama</label>
+                            <input type="text" placeholder="Fuad Ambar Maulrof" data-default="Fuad Ambar Maulrof">
+                        </div>
+                        <div class="form-group">
+                            <label>Nama Toko</label>
+                            <input type="text" placeholder="Shinn Store" data-default="Shinn Store">
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat Toko</label>
+                            <input type="text" placeholder="Jln. Ambaryon No 16" data-default="Jln. Ambaryon No 16">
+                        </div>
+                        <div class="button-group">
+                            <button type="reset" class="btn-reset">Reset</button>
+                            <button type="submit" class="btn-save">Simpan</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="data-section">
+                    <div class="section-header">
+                        <h2>Data Produk</h2>
+                        <a href="#" onclick="navigateToDataProduk()">
+                            <button class="btn-edit">Edit</button>
+                        </a>
+                    </div>
+                    <div class="section-header">
+                        <h2>Data Pelanggan</h2>
+                        <a href="#" onclick="navigateToDataPelanggan()">
+                            <button class="btn-edit">Edit</button>
+                        </a>
+                    </div>
+                    <div class="transaction-history">
+                        <h2>Riwayat Transaksi</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>Status</th>
+                                    <th>Produk</th>
+                                    <th>Waktu</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transactionData">
+                                <!-- data dibuat dengan  -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../../js/datapengguna1/script.js"></script>
+    <script src="../../js/navigasi/script.js"></script>
+</body>
+
+</html>
