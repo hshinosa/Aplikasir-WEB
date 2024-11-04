@@ -13,10 +13,13 @@ $(document).ready(function() {
             return;
         }
 
-        // Simulate form submission (replace with actual AJAX call if needed)
-        alert('Login berhasil!\nUsername: ' + username + '\nPassword: ' + password);
+        if (username !== password) {
+            alert('Username atau Kata Sandi tidak cocok. Silakan coba lagi.');
+            return;
+        }
+
+        alert('Login berhasil!');
         
-        // Redirect to dashboard
         window.location.href = "../../html/maindashboard/index.html";
     });
 });
